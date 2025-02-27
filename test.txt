@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 day la file cua main
+=======
+day la file test conflict
+>>>>>>> test_conflict
