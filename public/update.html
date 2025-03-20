@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Màn hình cập nhật</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.browser-window {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.browser-tabs {
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.browser-tabs a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+.browser-tabs .separator {
+    margin: 0 5px;
+}
+
+.update-form {
+    padding: 20px;
+}
+
+.update-form h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-actions a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-actions button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-actions button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <div class="browser-window">
+        <div class="browser-tabs">
+            <a href="">Home</a>
+            <span class="separator">|</span>
+            <a href="login.html">Đăng nhập</a>
+            <span class="separator">|</span>
+            <a href="register.html">Đăng ký</a>
+        </div>
+        <div class="update-form">
+            <h2>Màn hình cập nhật</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" value="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" value="">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Nhập lại mật khẩu</label>
+                    <input type="password" id="confirm-password" name="confirm-password" value="">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="">
+                </div>
+                <div class="form-actions">
+                    <a href="#">Đã có tài khoản</a>
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
