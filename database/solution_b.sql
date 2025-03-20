@@ -1,5 +1,3 @@
-GO
-
 USE bke_center;
 GO
 
@@ -67,7 +65,7 @@ FROM RankedOrders
 WHERE rn = 1;
 GO
 
-
+-- 17. (Giống câu 16, bỏ qua)
 
 -- 18. Liệt kê đơn hàng có số sản phẩm nhiều nhất của mỗi user
 WITH RankedOrders AS (
