@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Màn hình chi tiết</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.browser-window {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.browser-tabs {
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.browser-tabs a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+.browser-tabs .separator {
+    margin: 0 5px;
+}
+
+.user-detail {
+    padding: 20px;
+    text-align: center;
+}
+
+.user-detail h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 80px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.value {
+    text-align: left;
+}
+
+.edit-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <div class="browser-window">
+        <div class="browser-tabs">
+            <a href="#">Home</a>
+            <span class="separator">|</span>
+            <a href="#">Đăng xuất</a>
+        </div>
+        <div class="user-detail">
+            <h2>Màn hình chi tiết</h2>
+            <div class="info">
+                <div class="label">Username</div>
+                <div class="value">test1</div>
+            </div>
+            <div class="info">
+                <div class="label">Email</div>
+                <div class="value">test1@gmail.com</div>
+            </div>
+            <button class="edit-button">Chỉnh sửa</button>
+        </div>
+    </div>
+</body>
+</html>
